@@ -1,0 +1,126 @@
+.wrapper {
+  padding-bottom: var(--space-10);
+}
+
+.swiper {
+  padding: var(--space-4) var(--space-2) var(--space-10) !important;
+  overflow: visible !important;
+}
+
+/* Pagination dots */
+:global(.swiper-pagination) {
+  bottom: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px !important;
+  line-height: 1 !important;
+}
+
+:global(.swiper-pagination-bullet) {
+  width: 8px !important;
+  height: 8px !important;
+  background: var(--color-primary) !important;
+  opacity: 0.3 !important;
+  margin: 0 !important;
+  border-radius: 50% !important;
+  transition: all 0.3s ease !important;
+  vertical-align: middle !important;
+}
+
+:global(.swiper-pagination-bullet-active) {
+  opacity: 1 !important;
+  width: 24px !important;
+  border-radius: 4px !important;
+  background: var(--color-primary) !important;
+}
+
+.slide {
+  height: auto !important;
+}
+
+.card {
+  background: var(--color-white);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--color-border);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  position: relative;
+  transition: box-shadow var(--transition-base), transform var(--transition-base);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-4px);
+}
+
+.quoteIcon {
+  font-size: 2rem;
+  color: var(--color-accent-dark);
+  opacity: 0.6;
+}
+
+.stars {
+  display: flex;
+  gap: 3px;
+  color: #F5A623;
+  font-size: 0.9rem;
+}
+
+.quote {
+  flex: 1;
+}
+
+.quote p {
+  font-size: 0.95rem;
+  color: var(--color-text);
+  line-height: var(--leading-relaxed);
+  font-style: italic;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border);
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--color-accent);
+  flex-shrink: 0;
+}
+
+.name {
+  display: block;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--color-text);
+  font-style: normal;
+}
+
+.role {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+}
+
+.service {
+  margin-left: auto;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  background: var(--color-accent);
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+}

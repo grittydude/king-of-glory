@@ -1,0 +1,91 @@
+export const generalFaqs = [
+  {
+    id: 1,
+    question: 'What types of mental health services does King of Glory Healthcare offer?',
+    answer:
+      'We offer a comprehensive range of mental health services including psychiatric evaluations, medication management, individual therapy (CBT, DBT, ACT, EMDR), family therapy, child and adolescent therapy, PTSD treatment, anxiety and depression therapy, stress management, and substance use recovery.',
+  },
+  {
+    id: 2,
+    question: 'How do I book an appointment?',
+    answer:
+      'Booking is easy! You can schedule online via our Calendly booking page, call us at +1 (800) 555-HEAL, or use the contact form on our website. We typically offer appointments within 3–5 business days, with same-week slots available for urgent needs.',
+  },
+  {
+    id: 3,
+    question: 'Do you accept insurance?',
+    answer:
+      'We accept most major insurance plans including Aetna, Blue Cross Blue Shield, Cigna, United Healthcare, and Medicare. Please contact our billing team to verify your specific coverage before your first appointment. We also offer sliding-scale fees for uninsured patients.',
+  },
+  {
+    id: 4,
+    question: 'Are telehealth appointments available?',
+    answer:
+      'Yes! We offer secure, HIPAA-compliant video therapy and psychiatry sessions for most of our services. Telehealth is ideal for patients who prefer the convenience of home sessions or have difficulty attending in person.',
+  },
+  {
+    id: 5,
+    question: 'Is my treatment kept confidential?',
+    answer:
+      'Absolutely. Patient confidentiality is one of our highest priorities. All communications and treatment records are protected under HIPAA. We only share information with your explicit written consent, except in cases where safety requires disclosure as mandated by law.',
+  },
+  {
+    id: 6,
+    question: 'How long does each session last?',
+    answer:
+      'Session lengths vary by service. Therapy sessions are typically 50 minutes. Psychiatric evaluations last 60–90 minutes. Medication management follow-ups are 30–45 minutes. Comprehensive assessments may take 2–3 hours spread across one or two visits.',
+  },
+  {
+    id: 7,
+    question: 'What should I expect at my first appointment?',
+    answer:
+      'Your first visit is a comprehensive intake session where your clinician will review your background, current concerns, goals, and health history. There are no right or wrong answers — we simply want to understand you and begin building your personalized care plan.',
+  },
+  {
+    id: 8,
+    question: 'Do you treat children and teenagers?',
+    answer:
+      'Yes. We have child and adolescent specialists on our team who provide age-appropriate therapy, assessments, and psychiatric care for children from age 5 through age 17. We actively involve parents in the treatment process.',
+  },
+];
+
+export const bookingFaqs = [
+  {
+    id: 1,
+    question: 'How far in advance do I need to book?',
+    answer: 'We recommend booking at least 3–5 business days in advance. However, we keep urgent appointment slots available and will do our best to accommodate same-week requests for those in acute distress.',
+  },
+  {
+    id: 2,
+    question: 'Can I reschedule or cancel my appointment?',
+    answer: 'Yes. Please cancel or reschedule at least 24 hours in advance via the Calendly link in your confirmation email. Late cancellations or no-shows may incur a $50 administrative fee.',
+  },
+  {
+    id: 3,
+    question: 'What do I need to bring to my first appointment?',
+    answer: 'Please bring a valid photo ID, insurance card, a list of current medications, any prior mental health records or reports, and your completed intake forms (sent to you by email after booking).',
+  },
+  {
+    id: 4,
+    question: 'Is the Calendly booking secure?',
+    answer: 'Yes. Our Calendly integration is HIPAA-aware and all appointment data is handled with the highest privacy standards. Your personal information is never shared without your consent.',
+  },
+];
+
+export const serviceFaqs = [
+  {
+    id: 1,
+    question: 'How many therapy sessions will I need?',
+    answer: 'This varies by individual and concern. Many patients begin to see meaningful improvement within 8–12 sessions of CBT. Trauma work may take longer. Your therapist will regularly review your progress and discuss the expected duration with you.',
+  },
+  {
+    id: 2,
+    question: 'Will I be prescribed medication?',
+    answer: 'Medication is never prescribed without a thorough evaluation. Some conditions respond best to therapy alone, others to medication, and many to a combination. Our psychiatrists will only recommend medication if it is clinically appropriate and you consent.',
+  },
+  {
+    id: 3,
+    question: 'What is the difference between a psychiatrist and a therapist?',
+    answer: 'Psychiatrists are medical doctors who can prescribe medication and provide medical diagnoses. Therapists (including licensed counselors, social workers, and psychologists) focus on talk therapy and behavioral interventions. Many patients work with both.',
+  },
+];

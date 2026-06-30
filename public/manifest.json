@@ -1,0 +1,17 @@
+{
+  "name": "King of Glory Healthcare",
+  "short_name": "KOG Healthcare",
+  "description": "Compassionate, expert healthcare for your mind and body.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F9FBF5",
+  "theme_color": "#44583B",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+.layout {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: var(--space-12);
+  align-items: start;
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: var(--space-6);
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  margin-bottom: var(--space-8);
+}
+
+.step {
+  display: flex;
+  gap: var(--space-4);
+  align-items: flex-start;
+}
+
+.stepNum {
+  width: 36px;
+  height: 36px;
+  background: var(--gradient-primary);
+  color: var(--color-white);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.stepTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: var(--space-1);
+}
+
+.stepDesc {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  line-height: var(--leading-relaxed);
+}
+
+.infoBox, .contactBox {
+  background: var(--color-white);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  border: 1px solid var(--color-border);
+  margin-bottom: var(--space-5);
+}
+
+.infoBox h3, .contactBox h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: var(--space-4);
+}
+
+.infoList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.infoList li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: 0.875rem;
+  color: var(--color-text);
+}
+
+.checkIcon { color: var(--color-primary); flex-shrink: 0; }
+
+.contactLink {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--color-primary);
+  text-decoration: none;
+  padding: var(--space-2) 0;
+  transition: opacity var(--transition-fast);
+}
+
+.contactLink:hover { opacity: 0.75; }
+
+.contactHours {
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+  margin-top: var(--space-3);
+  line-height: var(--leading-relaxed);
+}
+
+.calendarCol {}
+
+.faqTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: var(--space-8);
+}
+
+@media (max-width: 1100px) {
+  .layout { grid-template-columns: 1fr; }
+}

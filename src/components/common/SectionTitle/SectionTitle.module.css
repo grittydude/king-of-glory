@@ -1,0 +1,55 @@
+.wrapper {
+  margin-bottom: var(--space-12);
+}
+
+.center { text-align: center; }
+.left { text-align: left; }
+.right { text-align: right; }
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  background: var(--color-accent);
+  padding: 0.35rem 1rem;
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-4);
+}
+
+.eyebrowDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: var(--leading-tight);
+  margin-bottom: var(--space-4);
+}
+
+.subtitle {
+  color: var(--color-text-muted);
+  font-size: var(--text-md);
+  line-height: var(--leading-relaxed);
+  margin-bottom: 0;
+}
+
+/* Light variant (for dark backgrounds) */
+.light .title { color: var(--color-white); }
+.light .subtitle { color: rgba(255, 255, 255, 0.7); }
+.light .eyebrow {
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--color-accent);
+}
+.light .eyebrowDot { background: var(--color-accent); }
