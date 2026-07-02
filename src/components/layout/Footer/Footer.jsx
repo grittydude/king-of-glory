@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
-  FaLeaf, FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock,
+  FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock,
   FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn, FaYoutube,
 } from 'react-icons/fa';
+import logoImg from '../../../assets/images/kingofgloryhealthcare_logo.png';
 import { FOOTER_LINKS, CONTACT_INFO } from '../../../constants';
 import styles from './Footer.module.css';
 
@@ -34,11 +35,7 @@ export default function Footer() {
           {/* Brand */}
           <div className={styles.brand}>
             <Link to="/" className={styles.logo} aria-label="King of Glory Healthcare">
-              <span className={styles.logoIcon}><FaLeaf /></span>
-              <span className={styles.logoText}>
-                <span className={styles.logoName}>King of Glory</span>
-                <span className={styles.logoSub}>Healthcare</span>
-              </span>
+              <img src={logoImg} alt="King of Glory Healthcare" className={styles.logoImg} />
             </Link>
             <p className={styles.brandDesc}>
               Compassionate, evidence-based mental health care that meets you where you are.

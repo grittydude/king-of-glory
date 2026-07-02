@@ -6,16 +6,17 @@ import PageHeader from '../../components/common/PageHeader/PageHeader';
 import SectionTitle from '../../components/common/SectionTitle/SectionTitle';
 import Button from '../../components/common/Button/Button';
 import CTA from '../../components/ui/CTA/CTA';
+import founderImg from '../../assets/images/founder.jpeg';
 import { stats } from '../../data/stats';
 import { ANIMATION_VARIANTS, SITE_NAME } from '../../constants';
 import useCounter from '../../hooks/useCounter';
 import styles from './About.module.css';
 
 const VALUES = [
-  { icon: <FaHeart />, title: 'Compassion', desc: 'We treat every patient with genuine empathy, dignity, and unconditional positive regard.' },
-  { icon: <FaShieldAlt />, title: 'Integrity', desc: 'We operate with transparency and honesty in all we do — clinically and administratively.' },
-  { icon: <FaBullseye />, title: 'Excellence', desc: 'We hold ourselves to the highest clinical standards and continuously pursue better outcomes.' },
-  { icon: <FaUsers />, title: 'Community', desc: 'We believe mental health care is a community responsibility and strive to expand access for all.' },
+  { icon: <FaHeart />, title: 'Compassion First', desc: 'We approach every person with kindness, empathy, and genuine understanding.' },
+  { icon: <FaShieldAlt />, title: 'Integrity Always', desc: 'We uphold the highest ethical standards in all we do.' },
+  { icon: <FaBullseye />, title: 'Continuous Growth', desc: 'We strive for personal and professional care development every day.' },
+  { icon: <FaUsers />, title: 'Community Impact', desc: 'We aim to make a lasting positive difference in society.' },
 ];
 
 const TIMELINE = [
@@ -53,6 +54,65 @@ export default function About() {
         breadcrumbs={[{ label: 'About Us', path: '/about' }]}
       />
 
+      {/* Meet Our Founder */}
+      <section className={`section ${styles.founderSection}`}>
+        <div className="container">
+          <div className={styles.founderGrid}>
+            <motion.div
+              className={styles.founderImageWrapper}
+              variants={ANIMATION_VARIANTS.fadeInLeft}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+            >
+              <img
+                src={founderImg}
+                alt="Dr. Ify, Founder of King of Glory Healthcare"
+                className={styles.founderImg}
+                loading="eager"
+              />
+            </motion.div>
+            <motion.div
+              className={styles.founderContent}
+              variants={ANIMATION_VARIANTS.fadeInRight}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+            >
+              <span className={styles.eyebrow}>Meet Our Founder</span>
+              <h2 className={styles.sectionHeading}>Dr. Ify</h2>
+              <p>
+                Dr. Ify is the visionary founder of King of Glory Healthcare, bringing decades of
+                clinical expertise and a heartfelt commitment to mental wellness in underserved
+                communities. Her approach blends evidence-based practice with genuine compassion —
+                meeting every patient where they are.
+              </p>
+              <p>
+                Driven by a belief that quality mental healthcare is a right, not a privilege, Dr. Ify
+                built King of Glory Healthcare to be a place where every person feels seen, heard, and
+                supported on their journey toward lasting wellness.
+              </p>
+              <ul className={styles.missionPoints}>
+                {[
+                  'Board-certified psychiatric specialist',
+                  'Dedicated advocate for community mental health',
+                  'Serving Clinton, MD and surrounding areas',
+                  'Accepting Medicaid and other insurance plans',
+                ].map((p) => (
+                  <li key={p}>
+                    <FaCheckCircle aria-hidden="true" className={styles.checkIcon} />
+                    {p}
+                  </li>
+                ))}
+              </ul>
+              <Button as={Link} to="/book-appointment" size="lg">
+                Book with Dr. Ify <FaArrowRight aria-hidden="true" />
+              </Button>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Mission & Vision */}
       <section className="section">
         <div className="container">
@@ -64,28 +124,32 @@ export default function About() {
               whileInView="visible"
               viewport={{ once: true }}
             >
-              <span className={styles.eyebrow}>Our Mission</span>
+              <span className={styles.eyebrow}>About King of Glory Healthcare</span>
               <h2 className={styles.sectionHeading}>Professionals Dedicated to Your Health</h2>
               <p>
-                At King of Glory Healthcare, our mission is to provide accessible, compassionate, and
-                evidence-based mental health care that empowers individuals, strengthens families, and
-                enriches communities.
+                At King of Glory Healthcare, we provide a comprehensive range of behavioral and
+                mental health services designed to support individuals and families at every stage
+                of their wellness journey.
               </p>
               <p>
-                We believe that mental health is not a luxury — it is a fundamental component of
-                overall wellbeing. Every person deserves quality care, regardless of their background,
-                insurance status, or the severity of their struggles.
+                From psychiatric evaluations and medication management to counseling and ongoing
+                mental health support, our goal is to help you overcome challenges and achieve
+                lasting well-being. Our compassionate team is committed to creating a safe,
+                welcoming, and confidential environment where your needs are heard and respected.
               </p>
-              <ul className={styles.missionPoints}>
-                {['Patient-centered care rooted in clinical evidence', 'Specialist doctors with board certifications', '24-hour crisis support resources', 'Telehealth available statewide'].map((p) => (
-                  <li key={p}>
-                    <FaCheckCircle aria-hidden="true" className={styles.checkIcon} />
-                    {p}
-                  </li>
-                ))}
-              </ul>
-              <Button as={Link} to="/team" size="lg">
-                Meet Our Team <FaArrowRight aria-hidden="true" />
+              <p>
+                We take a personalized approach to care, working closely with you to develop
+                treatment plans that promote healing, resilience, and a better quality of life.
+                Whether you are seeking support for emotional, behavioral, or mental health
+                concerns, King of Glory Healthcare is here to guide and support you every step
+                of the way.
+              </p>
+              <blockquote className={styles.quoteBlock}>
+                <p>"Mental health isn't a race to a finish line; it's the practice of learning to navigate the terrain as you move through it."</p>
+                <cite>— Dr. Ify</cite>
+              </blockquote>
+              <Button as={Link} to="/contact" size="lg">
+                Contact Us <FaArrowRight aria-hidden="true" />
               </Button>
             </motion.div>
             <motion.div
@@ -120,9 +184,9 @@ export default function About() {
       <section className={`section ${styles.valuesSection}`}>
         <div className="container">
           <SectionTitle
-            eyebrow="Core Values"
-            title="The Principles That Guide Everything We Do"
-            subtitle="Our values are not just words on a wall — they are the lived commitments that shape every patient interaction."
+            eyebrow="Our Values"
+            title="Guided by Principles, Driven by Care"
+            subtitle="Our values define who we are and guide our mission to provide compassionate, ethical, and impactful mental health care for every individual we serve."
           />
           <motion.div
             className={styles.valuesGrid}

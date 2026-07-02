@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaPhone, FaTimes, FaChevronDown, FaLeaf } from 'react-icons/fa';
+import { FaPhone, FaTimes, FaChevronDown } from 'react-icons/fa';
+import logoImg from '../../../assets/images/kingofgloryhealthcare_logo.png';
 import { NAV_LINKS, CONTACT_INFO } from '../../../constants';
 import { useApp } from '../../../context/AppContext';
 import Button from '../../common/Button/Button';
@@ -40,13 +41,7 @@ export default function Navbar() {
         <div className={`container ${styles.inner}`}>
           {/* Logo */}
           <Link to="/" className={styles.logo} aria-label="King of Glory Healthcare Home">
-            <span className={styles.logoIcon} aria-hidden="true">
-              <FaLeaf />
-            </span>
-            <span className={styles.logoText}>
-              <span className={styles.logoName}>King of Glory</span>
-              <span className={styles.logoSub}>Healthcare</span>
-            </span>
+            <img src={logoImg} alt="King of Glory Healthcare" className={styles.logoImg} />
           </Link>
 
           {/* Desktop Nav */}
@@ -100,9 +95,11 @@ export default function Navbar() {
               <FaPhone aria-hidden="true" />
               {CONTACT_INFO.phone}
             </a>
-            <Button as={Link} to="/book-appointment" size="sm">
-              Book Appointment
-            </Button>
+            <span className={styles.desktopBook}>
+              <Button as={Link} to="/book-appointment" size="sm">
+                Book Appointment
+              </Button>
+            </span>
             <button
               className={`${styles.hamburger} ${navOpen ? styles.open : ''}`}
               onClick={toggleNav}
@@ -143,11 +140,7 @@ export default function Navbar() {
             >
               <div className={styles.drawerHeader}>
                 <Link to="/" className={styles.logo} onClick={closeNav}>
-                  <span className={styles.logoIcon}><FaLeaf /></span>
-                  <span className={styles.logoText}>
-                    <span className={styles.logoName}>King of Glory</span>
-                    <span className={styles.logoSub}>Healthcare</span>
-                  </span>
+                  <img src={logoImg} alt="King of Glory Healthcare" className={styles.logoImg} />
                 </Link>
                 <button
                   className={styles.drawerClose}

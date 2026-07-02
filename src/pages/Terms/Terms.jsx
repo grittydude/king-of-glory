@@ -21,53 +21,59 @@ export default function Terms() {
       <section className="section">
         <div className="container">
           <div className={styles.content}>
-            <p className={styles.updated}>Last updated: December 1, 2024</p>
+            <p className={styles.updated}>Effective Date: January 8, 2025</p>
 
-            <h2>1. Acceptance of Terms</h2>
-            <p>By accessing and using the King of Glory Healthcare website and services, you accept and agree to be bound by these Terms and Conditions and our Privacy Policy. If you do not agree to these terms, please do not use our website or services.</p>
+            <p>Welcome to King of Glory Healthcare ("we," "our," "us"). By accessing or using our website, services, or booking an appointment, you agree to these Terms &amp; Conditions. Please read them carefully.</p>
 
-            <h2>2. Healthcare Disclaimer</h2>
-            <p>The content on this website is provided for general informational purposes only and does not constitute medical advice, diagnosis, or treatment. Always seek the advice of a qualified healthcare provider for any medical questions or conditions. Never disregard professional medical advice or delay seeking it because of information you have read on this website.</p>
-            <p>In case of a medical emergency, call 911 or your local emergency services immediately. For mental health crises, call 988 (Suicide & Crisis Lifeline).</p>
-
-            <h2>3. Appointment Booking and Cancellations</h2>
-            <p>Appointments booked through our website are subject to availability and confirmation by our clinical team. We require at least 24 hours notice for cancellations or rescheduling. Late cancellations (less than 24 hours notice) or no-shows may incur an administrative fee of $50.</p>
-
-            <h2>4. Payment and Insurance</h2>
-            <p>Fees for services are due at the time of service unless other arrangements have been made. We accept most major insurance plans; however, it is your responsibility to verify your coverage before your appointment. You are responsible for any amounts not covered by your insurance, including deductibles, copays, and coinsurance.</p>
-
-            <h2>5. Telehealth Services</h2>
-            <p>Telehealth services are subject to additional terms and the laws of the state in which you reside. By using our telehealth services, you consent to the use of electronic communications for your care. Telehealth is not appropriate for all conditions; your clinician will advise if in-person care is needed.</p>
-
-            <h2>6. Intellectual Property</h2>
-            <p>All content on this website — including text, images, graphics, logos, and software — is the property of King of Glory Healthcare or its content suppliers and is protected by copyright and other intellectual property laws. You may not reproduce, distribute, or modify any content without our prior written permission.</p>
-
-            <h2>7. User Conduct</h2>
-            <p>You agree not to use our website to:</p>
+            <h2>1. Use of Our Services</h2>
             <ul>
-              <li>Post or transmit any content that is unlawful, harmful, or offensive</li>
-              <li>Impersonate any person or entity</li>
-              <li>Transmit any unsolicited advertising or spam</li>
-              <li>Attempt to gain unauthorized access to our systems</li>
-              <li>Engage in any activity that disrupts or interferes with our services</li>
+              <li>Our website and services are intended for individuals seeking mental health support.</li>
+              <li>You agree to use our services responsibly and in compliance with applicable laws.</li>
+              <li>You must be at least 18 years old or have parental/guardian consent to use our services.</li>
             </ul>
 
-            <h2>8. Limitation of Liability</h2>
-            <p>To the maximum extent permitted by law, King of Glory Healthcare shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of our website or services, including but not limited to loss of data, loss of profits, or interruption of service.</p>
+            <h2>2. No Emergency Services</h2>
+            <ul>
+              <li>King of Glory Healthcare does not provide emergency medical or psychiatric services.</li>
+              <li>If you are experiencing a crisis, call your local emergency number immediately or go to the nearest emergency facility.</li>
+            </ul>
 
-            <h2>9. Governing Law</h2>
-            <p>These Terms and Conditions are governed by the laws of the State of Maryland, without regard to its conflict of law provisions. Any disputes arising under these terms shall be subject to the exclusive jurisdiction of the courts of Maryland.</p>
+            <h2>3. Appointments &amp; Payments</h2>
+            <ul>
+              <li>All sessions must be booked through our official booking system or by contacting our office.</li>
+              <li>Payment is due at the time of booking unless otherwise agreed.</li>
+              <li>Cancellations must be made at least 24 hours in advance. Late cancellations or missed appointments may be charged in full.</li>
+            </ul>
 
-            <h2>10. Changes to Terms</h2>
-            <p>We reserve the right to modify these Terms and Conditions at any time. Changes will be effective immediately upon posting to the website. Your continued use of the website after any such changes constitutes your acceptance of the new terms.</p>
+            <h2>4. Confidentiality &amp; Privacy</h2>
+            <ul>
+              <li>We respect your privacy and maintain confidentiality in accordance with professional and legal standards.</li>
+              <li>Please refer to our <a href="/privacy-policy">Privacy Policy</a> for details on how we collect, store, and use your personal information.</li>
+            </ul>
 
-            <h2>11. Contact</h2>
-            <p>If you have questions about these Terms and Conditions, please contact us:</p>
+            <h2>5. Limitation of Liability</h2>
+            <ul>
+              <li>Our services are provided by licensed professionals but do not guarantee any particular outcome.</li>
+              <li>We are not liable for any damages, losses, or injuries arising from the use of our services or website.</li>
+              <li>Use of this website and our services is at your own risk.</li>
+            </ul>
+
+            <h2>6. Intellectual Property</h2>
+            <p>All content on our website, including text, graphics, and logos, is the property of King of Glory Healthcare and may not be copied, reproduced, or distributed without permission.</p>
+
+            <h2>7. Changes to Terms</h2>
+            <p>We may update these Terms &amp; Conditions at any time. Updated versions will be posted on our website with a revised "Effective Date."</p>
+
+            <h2>8. Governing Law</h2>
+            <p>These Terms &amp; Conditions shall be governed by and interpreted under the laws of the United States.</p>
+
+            <h2>9. Contact Us</h2>
+            <p>For questions regarding these Terms &amp; Conditions, please contact us:</p>
             <address className={styles.address}>
-              <strong>King of Glory Healthcare — Legal Department</strong><br />
+              <strong>King of Glory Healthcare</strong><br />
               8861 Branch Avenue, Clinton, MD 20735 United States<br />
-              Email: <a href={`mailto:${CONTACT_INFO.email}`}>{CONTACT_INFO.email}</a><br />
-              Phone: <a href={`tel:${CONTACT_INFO.phone}`}>{CONTACT_INFO.phone}</a>
+              Email: <a href="mailto:contact@kingofgloryhealthcare.com">contact@kingofgloryhealthcare.com</a><br />
+              Phone: <a href="tel:+12404487242">+1 (240) 448-7242</a>
             </address>
           </div>
         </div>

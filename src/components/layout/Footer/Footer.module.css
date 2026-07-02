@@ -18,46 +18,19 @@
 .brand {}
 
 .logo {
-  display: flex;
-  align-items: center;
-  gap: var(--space-3);
+  display: inline-flex;
   text-decoration: none;
   margin-bottom: var(--space-5);
 }
 
-.logoIcon {
-  width: 44px;
-  height: 44px;
-  background: var(--gradient-primary);
+.logoImg {
+  height: 56px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  background: var(--color-accent);
   border-radius: var(--radius-md);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-white);
-  font-size: 1.25rem;
-  flex-shrink: 0;
-}
-
-.logoText {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.1;
-}
-
-.logoName {
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 0.95rem;
-  color: var(--color-white);
-}
-
-.logoSub {
-  font-family: var(--font-heading);
-  font-weight: 500;
-  font-size: 0.7rem;
-  color: var(--color-accent);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  padding: 6px 12px;
 }
 
 .brandDesc {
@@ -259,18 +232,51 @@
 
 .legalLinks a:hover { color: var(--color-accent); }
 
-/* Responsive */
+/* Responsive — tablet & mobile: single column, centred */
 @media (max-width: 1024px) {
   .grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: var(--space-8);
   }
-  .brand { grid-column: 1 / -1; }
-}
 
-@media (max-width: 600px) {
-  .grid { grid-template-columns: 1fr; }
-  .brand { grid-column: auto; }
-  .bottom { flex-direction: column; align-items: flex-start; }
+  .brand {
+    grid-column: auto;
+    text-align: center;
+  }
+
+  /* Centre the logo */
+  .logo { justify-content: center; }
+
+  /* Brand description */
+  .brandDesc {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  /* Contact list items */
+  .contactItem { justify-content: center; }
+
+  /* Link columns */
+  .col { text-align: center; }
+
+  /* Centre the title underline */
+  .colTitle::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Centre link list and hide hover arrow */
+  .colLinks { align-items: center; }
+  .colLinks a::before { display: none; }
+
+  /* Newsletter */
+  .newsletterText { text-align: center; }
   .newsletterForm { flex-direction: column; }
+
+  /* Bottom bar */
+  .bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }

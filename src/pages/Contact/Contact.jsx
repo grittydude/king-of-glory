@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaAmbulance } from 'react-icons/fa';
+import { FaPhone, FaFax, FaEnvelope, FaMapMarkerAlt, FaClock, FaAmbulance, FaShieldAlt } from 'react-icons/fa';
 import PageHeader from '../../components/common/PageHeader/PageHeader';
 import ContactForm from '../../components/ui/ContactForm/ContactForm';
 import Accordion from '../../components/common/Accordion/Accordion';
@@ -10,10 +10,13 @@ import styles from './Contact.module.css';
 
 const CONTACT_ITEMS = [
   { icon: <FaPhone />, label: 'Phone', value: CONTACT_INFO.phone, href: `tel:${CONTACT_INFO.phone}` },
-  { icon: <FaPhone />, label: 'Additional Lines', value: CONTACT_INFO.phone2 },
+  { icon: <FaPhone />, label: 'Phone 2', value: CONTACT_INFO.phone2, href: `tel:${CONTACT_INFO.phone2}` },
+  { icon: <FaFax />, label: 'Fax', value: `${CONTACT_INFO.fax} (documents only)` },
   { icon: <FaEnvelope />, label: 'Email', value: CONTACT_INFO.email, href: `mailto:${CONTACT_INFO.email}` },
+  { icon: <FaEnvelope />, label: 'Email 2', value: CONTACT_INFO.email2, href: `mailto:${CONTACT_INFO.email2}` },
   { icon: <FaMapMarkerAlt />, label: 'Address', value: CONTACT_INFO.address },
   { icon: <FaClock />, label: 'Hours', value: CONTACT_INFO.hours },
+  { icon: <FaShieldAlt />, label: 'Insurance', value: CONTACT_INFO.insurance },
 ];
 
 export default function Contact() {
@@ -71,8 +74,7 @@ export default function Contact() {
                 <div>
                   <strong>Mental Health Emergency?</strong>
                   <p>
-                    Call <a href={`tel:${CONTACT_INFO.emergency}`}>{CONTACT_INFO.emergency}</a> or
-                    the National Crisis Line at <a href="tel:988">988</a> for immediate support.
+                    Call the National Crisis Line at <a href="tel:988">988</a> or <a href="tel:911">911</a> for immediate support.
                   </p>
                 </div>
               </div>

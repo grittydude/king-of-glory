@@ -59,9 +59,9 @@ export default function Booking() {
                   <ul className={styles.infoList}>
                     {[
                       'Valid photo ID',
-                      'Insurance card (if applicable)',
+                      'Insurance card — we accept Medicaid and other plans',
                       'List of current medications',
-                      'Any prior mental health records',
+                      'Any prior mental health records (you may fax to (240) 448-6991)',
                       'Completed intake forms (emailed after booking)',
                     ].map((item) => (
                       <li key={item}>
@@ -70,12 +70,18 @@ export default function Booking() {
                       </li>
                     ))}
                   </ul>
+                  <p className={styles.flexNote}>
+                    Flexible scheduling hours are also accommodated by request and availability.
+                  </p>
                 </div>
 
                 <div className={styles.contactBox}>
                   <h3>Prefer to Call?</h3>
                   <a href={`tel:${CONTACT_INFO.phone}`} className={styles.contactLink}>
                     <FaPhone aria-hidden="true" /> {CONTACT_INFO.phone}
+                  </a>
+                  <a href={`tel:${CONTACT_INFO.phone2}`} className={styles.contactLink}>
+                    <FaPhone aria-hidden="true" /> {CONTACT_INFO.phone2}
                   </a>
                   <a href={`mailto:${CONTACT_INFO.email}`} className={styles.contactLink}>
                     <FaEnvelope aria-hidden="true" /> {CONTACT_INFO.email}

@@ -183,3 +183,20 @@ main {
   border-radius: var(--radius-xl) !important;
   overflow: hidden;
 }
+
+/* ── Mobile centering ────────────────────────────────────── */
+@media (max-width: 768px) {
+  .container {
+    text-align: center;
+  }
+
+  /* Re-align functional elements that must stay left */
+  .container input,
+  .container textarea,
+  .container select,
+  .container label,
+  .container form,
+  .container address {
+    text-align: left;
+  }
+}

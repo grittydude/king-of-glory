@@ -33,7 +33,10 @@
   color: var(--color-white);
   box-shadow: 0 4px 16px rgba(68, 88, 59, 0.3);
 }
-.primary:hover { box-shadow: 0 6px 24px rgba(68, 88, 59, 0.42); }
+.primary:hover {
+  color: var(--color-white);
+  box-shadow: 0 6px 24px rgba(68, 88, 59, 0.42);
+}
 
 .secondary {
   background: var(--color-white);

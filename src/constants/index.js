@@ -43,13 +43,16 @@ export const SOCIAL_LINKS = [
 ];
 
 export const CONTACT_INFO = {
-  phone: '(240) 448-6991',
-  phone2: '(240) 448-7242 | (240) 681-9354',
-  email: 'Kingofgloryhealthcare@gmail.com',
+  phone: '(240) 448-7242',
+  phone2: '(240) 681-9354',
+  fax: '(240) 448-6991',
+  email: 'contact@kingofgloryhealthcare.com',
+  email2: 'Kingofgloryhealthcare@gmail.com',
   website: 'kingofgloryhealthcare.com',
   address: '8861 Branch Avenue, Clinton, MD 20735 United States',
-  hours: 'Mon–Fri: 9:00am – 7:00pm | Sat: 10:00am – 5:00pm',
-  emergency: '(240) 448-6991',
+  hours: 'Mon–Sat: 9:00am – 6:30pm',
+  insurance: 'We accept Medicaid and other insurance plans',
+  emergency: '988',
 };
 
 export const SERVICE_CATEGORIES = [

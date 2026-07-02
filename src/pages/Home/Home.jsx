@@ -11,6 +11,7 @@ import { services } from '../../data/services';
 import { stats } from '../../data/stats';
 import { ANIMATION_VARIANTS, CONTACT_INFO, SITE_NAME } from '../../constants';
 import useCounter from '../../hooks/useCounter';
+import founderImg from '../../assets/images/founder.jpeg';
 import styles from './Home.module.css';
 
 const WHY_ITEMS = [
@@ -126,7 +127,7 @@ export default function Home() {
           >
             <div className={styles.heroImgWrapper}>
               <img
-                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=700&auto=format&fit=crop&q=85"
+                src={founderImg}
                 alt="Dr. Esther Howard, King of Glory Healthcare physician"
                 className={styles.heroImg}
                 loading="eager"

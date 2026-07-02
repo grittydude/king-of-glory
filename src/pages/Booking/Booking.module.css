@@ -85,6 +85,15 @@
 
 .checkIcon { color: var(--color-primary); flex-shrink: 0; }
 
+.flexNote {
+  margin-top: var(--space-4);
+  font-size: 0.82rem;
+  color: var(--color-primary);
+  font-style: italic;
+  font-weight: 500;
+  line-height: var(--leading-relaxed);
+}
+
 .contactLink {
   display: flex;
   align-items: center;
